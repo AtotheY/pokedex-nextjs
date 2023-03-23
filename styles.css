@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set a default font and background color */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Media query to adjust card width on smaller screens */
+@media (max-width: 768px) {
+  .pokemon-card {
+    width: 150px;
+  }
+}

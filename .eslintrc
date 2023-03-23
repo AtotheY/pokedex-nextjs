@@ -1,0 +1,29 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true
+	},
+	"plugins": ["prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:prettier/recommended",
+		"next",
+		"next/core-web-vitals"
+	],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"arrowParens": "avoid",
+				"tabWidth": 2,
+				"singleQuote": true,
+				"trailingComma": "none"
+			}
+		]
+	}
+}

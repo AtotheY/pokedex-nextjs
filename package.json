@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "postcss src/styles/tailwind.css -o public/styles/tailwind.css && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,11 +12,14 @@
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.14",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
+    "postcss": "^8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwindcss": "^3.2.7",
     "typescript": "4.9.5"
   }
 }
